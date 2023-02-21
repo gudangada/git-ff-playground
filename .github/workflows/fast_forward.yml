@@ -16,7 +16,7 @@ jobs:
         id: ff-action
         uses:  ./
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           success_message: 'Success! Fast forwarded ***target_base*** to ***source_head***! ```git checkout target_base && git merge source_head --ff-only``` '
           failure_message: 'Failed! Cannot do fast forward!'
       # Advanced use case example
